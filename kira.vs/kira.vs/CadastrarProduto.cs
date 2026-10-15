@@ -23,12 +23,8 @@ namespace kira.vs
             }
             else
             {
-                Produto novoProduto = new Produto()
-                {
-                    Nome = txt_nome.Text,
-                    Preco = txt_preco.Text,
-                    Quantidade = nud_quantidade.Value
-                };
+                Produto novoProduto = new Produto();
+                novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
 
                 FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
 
@@ -38,9 +34,16 @@ namespace kira.vs
         }
         public class Produto
         {
-            public string? Nome { get; set; }
-            public string? Preco { get; set; }
-            public decimal? Quantidade { get; set; }
+            private string? Nome { get; set; }
+            private string? Preco { get; set; }
+            private decimal? Quantidade { get; set; }
+
+            public void DefinirValores(string nome, string preco, decimal quantidade)
+            {
+                Nome = nome;
+                Preco = preco;
+                Quantidade = quantidade;
+            }
         };
     }
 }
