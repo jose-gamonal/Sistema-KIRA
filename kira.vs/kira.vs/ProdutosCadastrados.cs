@@ -13,6 +13,7 @@ namespace kira.vs
         public ProdutosCadastrados()
         {
             InitializeComponent();
+            dgv_tabela.DataSource = FormInicial.Compartilhador.listaprodutos;
         }
     }
 }
