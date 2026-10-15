@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kira.vs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+205bc2e9fa3bf1cba586dbad4116d625c7913b3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ae7b23a634024216a3d4a46809072ab95480b55")]
 [assembly: System.Reflection.AssemblyProductAttribute("kira.vs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kira.vs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
