@@ -38,14 +38,32 @@ namespace kira.vs
             public string? Nome { get; private set; }
             public double? Preco { get; private set; }
             public decimal? Quantidade { get; private set; }
+            public string? Categoria { }
 
-            public void DefinirValores(string nome, string preco, decimal quantidade)
+            public virtual void DefinirValores(string nome, string preco, decimal quantidade)
             {
                 Nome = nome;
                 Preco = Convert.ToDouble(preco);
                 Quantidade = quantidade;
             }
         };
+
+        public class Salgado : Produto
+        {
+            public override void DefinirValores(string nome, string preco, decimal quantidade)
+            {
+                base.DefinirValores(string nome, string preco, decimal quantidade);
+
+            }
+        }
+        public class Doce : Produto
+        {
+
+        }
+        public class Bebida : Produto
+        {
+
+        }
 
         private void txt_preco_KeyPress(object sender, KeyPressEventArgs e)
         {

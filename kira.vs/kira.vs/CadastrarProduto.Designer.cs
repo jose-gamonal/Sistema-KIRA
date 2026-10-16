@@ -37,6 +37,9 @@
             lbl_quantidade = new Label();
             nud_quantidade = new NumericUpDown();
             btn_cadastrar = new Button();
+            rad_salgado = new RadioButton();
+            rad_doce = new RadioButton();
+            rad_bebida = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).BeginInit();
             SuspendLayout();
             // 
@@ -112,7 +115,7 @@
             // 
             // btn_cadastrar
             // 
-            btn_cadastrar.Location = new Point(44, 204);
+            btn_cadastrar.Location = new Point(44, 217);
             btn_cadastrar.Name = "btn_cadastrar";
             btn_cadastrar.Size = new Size(214, 53);
             btn_cadastrar.TabIndex = 9;
@@ -120,11 +123,47 @@
             btn_cadastrar.UseVisualStyleBackColor = true;
             btn_cadastrar.Click += btn_cadastrar_Click;
             // 
+            // rad_salgado
+            // 
+            rad_salgado.AutoSize = true;
+            rad_salgado.Location = new Point(44, 185);
+            rad_salgado.Name = "rad_salgado";
+            rad_salgado.Size = new Size(67, 19);
+            rad_salgado.TabIndex = 10;
+            rad_salgado.TabStop = true;
+            rad_salgado.Text = "Salgado";
+            rad_salgado.UseVisualStyleBackColor = true;
+            // 
+            // rad_doce
+            // 
+            rad_doce.AutoSize = true;
+            rad_doce.Location = new Point(123, 185);
+            rad_doce.Name = "rad_doce";
+            rad_doce.Size = new Size(52, 19);
+            rad_doce.TabIndex = 11;
+            rad_doce.TabStop = true;
+            rad_doce.Text = "Doce";
+            rad_doce.UseVisualStyleBackColor = true;
+            // 
+            // rad_bebida
+            // 
+            rad_bebida.AutoSize = true;
+            rad_bebida.Location = new Point(197, 185);
+            rad_bebida.Name = "rad_bebida";
+            rad_bebida.Size = new Size(61, 19);
+            rad_bebida.TabIndex = 12;
+            rad_bebida.TabStop = true;
+            rad_bebida.Text = "Bebida";
+            rad_bebida.UseVisualStyleBackColor = true;
+            // 
             // CadastrarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(303, 295);
+            Controls.Add(rad_bebida);
+            Controls.Add(rad_doce);
+            Controls.Add(rad_salgado);
             Controls.Add(btn_cadastrar);
             Controls.Add(nud_quantidade);
             Controls.Add(lbl_quantidade);
@@ -152,5 +191,8 @@
         private Label lbl_quantidade;
         private NumericUpDown nud_quantidade;
         private Button btn_cadastrar;
+        private RadioButton rad_salgado;
+        private RadioButton rad_doce;
+        private RadioButton rad_bebida;
     }
 }

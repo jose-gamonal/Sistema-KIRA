@@ -19,3 +19,24 @@ C:\Users\Gamonal\Desktop\KIRA\Sistema KIRA\kira.vs\kira.vs\obj\Debug\net10.0-win
 C:\Users\Gamonal\Desktop\KIRA\Sistema KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.CadastrarProduto.resources
 C:\Users\Gamonal\Desktop\KIRA\Sistema KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.ProdutosCadastrados.resources
 C:\Users\Gamonal\Desktop\KIRA\Sistema KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.RealizarPedido.resources
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.CadastrarProduto.resources
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.FormInicial.resources
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.ProdutosCadastrados.resources
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.RealizarPedido.resources
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.csproj.GenerateResource.cache
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.AssemblyInfoInputs.cache
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.AssemblyInfo.cs
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.csproj.CoreCompileInputs.cache
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.sourcelink.json
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.dll
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\refint\kira.vs.dll
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.pdb
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\bin\Debug\net10.0-windows\kira.vs.exe
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\bin\Debug\net10.0-windows\kira.vs.deps.json
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\bin\Debug\net10.0-windows\kira.vs.runtimeconfig.json
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\bin\Debug\net10.0-windows\kira.vs.dll
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\bin\Debug\net10.0-windows\kira.vs.pdb
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.genruntimeconfig.cache
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\ref\kira.vs.dll
+C:\Users\LABSC3\Documents\GitHub\Sistema-KIRA\kira.vs\kira.vs\obj\Debug\net10.0-windows\kira.vs.csproj.Up2Date
