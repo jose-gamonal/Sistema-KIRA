@@ -17,7 +17,7 @@ namespace kira.vs
 
         public void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text) || decimal.IsNegative(nud_quantidade.Value))
+            if (string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text) || nud_quantidade.Value < 1)
             {
                 MessageBox.Show("Inclua dados válidos.");
             }
@@ -30,20 +30,38 @@ namespace kira.vs
 
                 txt_nome.Clear();
                 txt_preco.Clear();
+                nud_quantidade.Value = 0;
             }
         }
         public class Produto
         {
-            private string? Nome { get; set; }
-            private string? Preco { get; set; }
-            private decimal? Quantidade { get; set; }
+            public string? Nome { get; private set; }
+            public double? Preco { get; private set; }
+            public decimal? Quantidade { get; private set; }
 
             public void DefinirValores(string nome, string preco, decimal quantidade)
             {
                 Nome = nome;
-                Preco = preco;
+                Preco = Convert.ToDouble(preco);
                 Quantidade = quantidade;
             }
         };
+
+        private void txt_preco_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+            {
+                e.Handled = true; //bloqueia
+            }
+            else
+            {
+                e.Handled = false;
+            }
+
+            if (e.KeyChar == ',' && ((sender as TextBox).Text.IndexOf(',')) > -1)
+            {
+                e.Handled = true;
+            } //se o último caractere for uma vírgula e ele encontrar outra vírgula no texto
+        }
     }
 }

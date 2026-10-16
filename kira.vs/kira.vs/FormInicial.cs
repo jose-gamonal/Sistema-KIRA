@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using static kira.vs.CadastrarProduto;
 using static kira.vs.ProdutosCadastrados;
 
 namespace kira.vs
@@ -12,9 +13,8 @@ namespace kira.vs
 
         public static class Compartilhador
         {
-            public static BindingList<CadastrarProduto.Produto> listaprodutos = new BindingList<CadastrarProduto.Produto>();
+            public static BindingList<CadastrarProduto.Produto> listaprodutos { get; } = new BindingList<CadastrarProduto.Produto>();
         }
-
 
         // Cada função abaixo abre o popup do formulário correspondente
         private void btn_produto_Click(object sender, EventArgs e)

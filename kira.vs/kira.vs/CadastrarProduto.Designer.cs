@@ -92,6 +92,7 @@
             txt_preco.Name = "txt_preco";
             txt_preco.Size = new Size(128, 23);
             txt_preco.TabIndex = 6;
+            txt_preco.KeyPress += txt_preco_KeyPress;
             // 
             // lbl_quantidade
             // 
