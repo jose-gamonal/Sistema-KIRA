@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             lbl_titulo = new Label();
-            lbl_titulosistema = new Label();
             lbl_nome = new Label();
             lbl_preco = new Label();
             txt_nome = new TextBox();
@@ -40,6 +39,7 @@
             rad_salgado = new RadioButton();
             rad_doce = new RadioButton();
             rad_bebida = new RadioButton();
+            lbl_titulosistema = new Label();
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).BeginInit();
             SuspendLayout();
             // 
@@ -53,16 +53,6 @@
             lbl_titulo.Size = new Size(257, 31);
             lbl_titulo.TabIndex = 1;
             lbl_titulo.Text = "* Lanchonete Kira *";
-            // 
-            // lbl_titulosistema
-            // 
-            lbl_titulosistema.AutoSize = true;
-            lbl_titulosistema.Font = new Font("Myanmar Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_titulosistema.Location = new Point(90, 51);
-            lbl_titulosistema.Name = "lbl_titulosistema";
-            lbl_titulosistema.Size = new Size(118, 23);
-            lbl_titulosistema.TabIndex = 2;
-            lbl_titulosistema.Text = "Cadastrar Produto";
             // 
             // lbl_nome
             // 
@@ -156,6 +146,16 @@
             rad_bebida.Text = "Bebida";
             rad_bebida.UseVisualStyleBackColor = true;
             // 
+            // lbl_titulosistema
+            // 
+            lbl_titulosistema.AutoSize = true;
+            lbl_titulosistema.Font = new Font("Myanmar Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_titulosistema.Location = new Point(90, 51);
+            lbl_titulosistema.Name = "lbl_titulosistema";
+            lbl_titulosistema.Size = new Size(118, 23);
+            lbl_titulosistema.TabIndex = 2;
+            lbl_titulosistema.Text = "Cadastrar Produto";
+            // 
             // CadastrarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -183,7 +183,6 @@
         #endregion
 
         private Label lbl_titulo;
-        private Label lbl_titulosistema;
         private Label lbl_nome;
         private Label lbl_preco;
         private TextBox txt_nome;
@@ -194,5 +193,6 @@
         private RadioButton rad_salgado;
         private RadioButton rad_doce;
         private RadioButton rad_bebida;
+        private Label lbl_titulosistema;
     }
 }

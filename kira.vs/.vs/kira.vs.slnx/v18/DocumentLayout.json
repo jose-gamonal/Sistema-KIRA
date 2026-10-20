@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,59 +50,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CadastrarProduto.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "CadastrarProduto.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
               "RelativeDocumentMoniker": "kira.vs\\CadastrarProduto.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs [Design]",
-              "RelativeToolTip": "kira.vs\\CadastrarProduto.cs [Design]",
+              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs [Projeto]",
+              "RelativeToolTip": "kira.vs\\CadastrarProduto.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T00:09:49.883Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RealizarPedido.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
               "RelativeDocumentMoniker": "kira.vs\\RealizarPedido.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs [Projeto]",
               "RelativeToolTip": "kira.vs\\RealizarPedido.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T20:45:57.75Z"
+              "WhenOpened": "2026-10-18T20:45:57.75Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProdutosCadastrados.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
               "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs [Projeto]",
               "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T23:06:06.043Z"
+              "WhenOpened": "2026-10-15T23:06:06.043Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProdutosCadastrados.cs",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
               "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
               "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T17:56:28.079Z"
+              "WhenOpened": "2026-10-15T17:56:28.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CadastrarProduto.cs",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
               "RelativeDocumentMoniker": "kira.vs\\CadastrarProduto.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
               "RelativeToolTip": "kira.vs\\CadastrarProduto.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T12:54:30.057Z",
               "EditorCaption": ""
@@ -115,7 +118,7 @@
               "RelativeDocumentMoniker": "kira.vs\\FormInicial.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
               "RelativeToolTip": "kira.vs\\FormInicial.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T13:14:50.69Z",
               "EditorCaption": ""

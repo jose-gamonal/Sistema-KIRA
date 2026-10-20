@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             dgv_tabela = new DataGridView();
-            lbl_titulo = new Label();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgv_tabela).BeginInit();
             SuspendLayout();
@@ -40,17 +39,8 @@
             dgv_tabela.Location = new Point(13, 48);
             dgv_tabela.Name = "dgv_tabela";
             dgv_tabela.ReadOnly = true;
-            dgv_tabela.Size = new Size(444, 410);
+            dgv_tabela.Size = new Size(461, 410);
             dgv_tabela.TabIndex = 0;
-            // 
-            // lbl_titulo
-            // 
-            lbl_titulo.AutoSize = true;
-            lbl_titulo.Location = new Point(278, 22);
-            lbl_titulo.Name = "lbl_titulo";
-            lbl_titulo.Size = new Size(41, 15);
-            lbl_titulo.TabIndex = 1;
-            lbl_titulo.Text = "Tabela";
             // 
             // label1
             // 
@@ -67,12 +57,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 488);
+            ClientSize = new Size(488, 488);
             Controls.Add(label1);
-            Controls.Add(lbl_titulo);
             Controls.Add(dgv_tabela);
             Name = "ProdutosCadastrados";
-            Text = "Produtos Cadastrados";
+            Text = "Tabela de Produtos";
             FormClosing += ProdutosCadastrados_FormClosing;
             Load += ProdutosCadastrados_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_tabela).EndInit();
@@ -83,7 +72,6 @@
         #endregion
 
         private DataGridView dgv_tabela;
-        private Label lbl_titulo;
         private Label label1;
     }
 }

@@ -9,7 +9,7 @@ namespace kira.vs
         public FormInicial()
         {
             InitializeComponent();
-        }
+        } 
 
         public static class Compartilhador
         {
