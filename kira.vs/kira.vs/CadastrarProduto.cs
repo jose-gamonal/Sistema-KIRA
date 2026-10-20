@@ -85,22 +85,27 @@ namespace kira.vs
             }
             else
             {
-                MessageBox.Show("Inclua dados válidos.");
+                MessageBox.Show("Insira dados válidos.");
             }
         }
 
         public class Produto
         {
-            public string? Nome { get; private set; }
-            public double? Preco { get; private set; }
-            public decimal? Quantidade { get; private set; }
-            public string? Categoria { get; protected set; }
+            public string Nome { get; private set; }
+            public double Preco { get; private set; }
+            public decimal Quantidade { get; private set; }
+            public string Categoria { get; protected set; }
 
             public virtual void DefinirValores(string nome, string preco, decimal quantidade)
             {
                 Nome = nome;
                 Preco = Convert.ToDouble(preco);
                 Quantidade = quantidade;
+            }
+
+            public void Venda(decimal quantidadevendida)
+            {
+                Quantidade -= quantidadevendida; 
             }
         };
 

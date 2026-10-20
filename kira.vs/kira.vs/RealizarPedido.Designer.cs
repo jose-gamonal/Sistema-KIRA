@@ -36,12 +36,12 @@
             btn_adicionar = new Button();
             txt_nome = new TextBox();
             nud_quantidade = new NumericUpDown();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            lbl_lista = new Label();
+            pbox_burger = new PictureBox();
+            pbox_coca = new PictureBox();
+            lbl_carrinho = new Label();
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbox_burger).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbox_coca).BeginInit();
             SuspendLayout();
             // 
             // lbl_titulo
@@ -63,6 +63,7 @@
             btn_pedido.TabIndex = 3;
             btn_pedido.Text = "Realizar Pedido";
             btn_pedido.UseVisualStyleBackColor = true;
+            btn_pedido.Click += btn_pedido_Click;
             // 
             // lbl_total
             // 
@@ -89,58 +90,59 @@
             btn_adicionar.TabIndex = 6;
             btn_adicionar.Text = "Adicionar Produto";
             btn_adicionar.UseVisualStyleBackColor = true;
+            btn_adicionar.Click += btn_adicionar_Click;
             // 
             // txt_nome
             // 
-            txt_nome.Location = new Point(30, 63);
+            txt_nome.Location = new Point(30, 58);
             txt_nome.Name = "txt_nome";
             txt_nome.Size = new Size(181, 23);
             txt_nome.TabIndex = 8;
             // 
             // nud_quantidade
             // 
-            nud_quantidade.Location = new Point(217, 63);
+            nud_quantidade.Location = new Point(217, 58);
             nud_quantidade.Name = "nud_quantidade";
-            nud_quantidade.Size = new Size(46, 23);
+            nud_quantidade.Size = new Size(50, 23);
             nud_quantidade.TabIndex = 10;
             // 
-            // pictureBox1
+            // pbox_burger
             // 
-            pictureBox1.Image = Properties.Resources.dis_is_da_burger;
-            pictureBox1.ImageLocation = "";
-            pictureBox1.Location = new Point(295, 90);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(155, 151);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
+            pbox_burger.Image = Properties.Resources.dis_is_da_burger;
+            pbox_burger.ImageLocation = "";
+            pbox_burger.Location = new Point(401, 89);
+            pbox_burger.Name = "pbox_burger";
+            pbox_burger.Size = new Size(155, 151);
+            pbox_burger.SizeMode = PictureBoxSizeMode.Zoom;
+            pbox_burger.TabIndex = 11;
+            pbox_burger.TabStop = false;
             // 
-            // pictureBox2
+            // pbox_coca
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(428, 102);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(112, 107);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
+            pbox_coca.Image = (Image)resources.GetObject("pbox_coca.Image");
+            pbox_coca.Location = new Point(323, 101);
+            pbox_coca.Name = "pbox_coca";
+            pbox_coca.Size = new Size(112, 107);
+            pbox_coca.SizeMode = PictureBoxSizeMode.Zoom;
+            pbox_coca.TabIndex = 12;
+            pbox_coca.TabStop = false;
             // 
-            // lbl_lista
+            // lbl_carrinho
             // 
-            lbl_lista.Location = new Point(291, 16);
-            lbl_lista.Name = "lbl_lista";
-            lbl_lista.Size = new Size(250, 36);
-            lbl_lista.TabIndex = 13;
-            lbl_lista.Text = ">";
+            lbl_carrinho.Location = new Point(291, 16);
+            lbl_carrinho.Name = "lbl_carrinho";
+            lbl_carrinho.Size = new Size(250, 36);
+            lbl_carrinho.TabIndex = 13;
+            lbl_carrinho.Text = ">";
             // 
             // RealizarPedido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(568, 209);
-            Controls.Add(lbl_lista);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(lbl_carrinho);
+            Controls.Add(pbox_coca);
+            Controls.Add(pbox_burger);
             Controls.Add(nud_quantidade);
             Controls.Add(txt_nome);
             Controls.Add(btn_adicionar);
@@ -151,8 +153,8 @@
             Name = "RealizarPedido";
             Text = "Pedido";
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbox_burger).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbox_coca).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,8 +169,8 @@
         private TextBox txt_nome;
         private Label lbl_nome;
         private NumericUpDown nud_quantidade;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Label lbl_lista;
+        private PictureBox pbox_burger;
+        private PictureBox pbox_coca;
+        private Label lbl_carrinho;
     }
 }
