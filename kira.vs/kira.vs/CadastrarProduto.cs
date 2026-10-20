@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -23,14 +24,37 @@ namespace kira.vs
             }
             else
             {
+                string categoria = "";
+
+                if (rad_bebida.Checked)
+                {
+                    categoria = "Bebida";
+                }
+                else if (rad_doce.Checked)
+                {
+                    categoria = "Doce";
+                }
+                else if (rad_salgado.Checked)
+                {
+                    categoria = "Salgado";
+                }
+                else
+                {
+                    MessageBox.Show("Selecione uma categoria.");
+                    return;
+                }
+
                 Produto novoProduto = new Produto();
-                novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value, categoria);
 
                 FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
 
                 txt_nome.Clear();
                 txt_preco.Clear();
                 nud_quantidade.Value = 0;
+                rad_bebida.Checked = false;
+                rad_doce.Checked = false;
+                rad_salgado.Checked = false;
             }
         }
         public class Produto
@@ -38,31 +62,38 @@ namespace kira.vs
             public string? Nome { get; private set; }
             public double? Preco { get; private set; }
             public decimal? Quantidade { get; private set; }
-            public string? Categoria { }
-
-            public virtual void DefinirValores(string nome, string preco, decimal quantidade)
+            public string? Categoria { get; private set; }
+            public virtual void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
             {
                 Nome = nome;
                 Preco = Convert.ToDouble(preco);
                 Quantidade = quantidade;
+                Categoria = categoria;
             }
         };
 
+        Produto novoProduto;
+
         public class Salgado : Produto
         {
-            public override void DefinirValores(string nome, string preco, decimal quantidade)
+            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
             {
-                base.DefinirValores(string nome, string preco, decimal quantidade);
-
+                base.DefinirValores(nome , preco, quantidade, categoria);
             }
         }
         public class Doce : Produto
         {
-
+            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            {
+                base.DefinirValores(nome, preco, quantidade, categoria);
+            }
         }
         public class Bebida : Produto
         {
-
+            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            {
+                base.DefinirValores(nome, preco, quantidade, categoria);
+            }
         }
 
         private void txt_preco_KeyPress(object sender, KeyPressEventArgs e)
