@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Natan\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Natan\\.nuget\\packages"
+      "C:\\Users\\Gamonal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Gamonal\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

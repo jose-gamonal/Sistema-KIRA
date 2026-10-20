@@ -8,26 +8,24 @@
     "net10.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\Natan\\.nuget\\packages\\": {}
+    "C:\\Users\\Gamonal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Natan\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+      "projectUniqueName": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
       "projectName": "kira.vs",
-      "projectPath": "C:\\Users\\Natan\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
-      "packagesPath": "C:\\Users\\Natan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Natan\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\obj\\",
+      "projectPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+      "packagesPath": "C:\\Users\\Gamonal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Natan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Gamonal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

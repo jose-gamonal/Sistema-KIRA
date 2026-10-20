@@ -18,37 +18,39 @@ namespace kira.vs
 
         public void btn_cadastrar_Click(object sender, EventArgs e)
         {
+            bool cadastrado = true;
+
             if (string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text) || nud_quantidade.Value < 1)
             {
-                MessageBox.Show("Inclua dados válidos.");
+                cadastrado = false;
             }
             else
             {
-                string categoria = "";
-
-                if (rad_bebida.Checked)
+                if (rad_salgado.Checked)
                 {
-                    categoria = "Bebida";
+                    Produto novoProduto = new Salgado();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
                 else if (rad_doce.Checked)
                 {
-                    categoria = "Doce";
+                    Produto novoProduto = new Doce();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
-                else if (rad_salgado.Checked)
+                else if (rad_bebida.Checked)
                 {
-                    categoria = "Salgado";
+                    Produto novoProduto = new Bebida();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
                 else
                 {
-                    MessageBox.Show("Selecione uma categoria.");
-                    return;
+                    cadastrado = false;
                 }
+            }
 
-                Produto novoProduto = new Produto();
-                novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value, categoria);
-
-                FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
-
+            if (cadastrado == true){
                 txt_nome.Clear();
                 txt_preco.Clear();
                 nud_quantidade.Value = 0;
@@ -56,43 +58,48 @@ namespace kira.vs
                 rad_doce.Checked = false;
                 rad_salgado.Checked = false;
             }
+            else
+            {
+                MessageBox.Show("Inclua dados válidos.");
+            }
         }
         public class Produto
         {
             public string? Nome { get; private set; }
             public double? Preco { get; private set; }
             public decimal? Quantidade { get; private set; }
-            public string? Categoria { get; private set; }
-            public virtual void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            public string? Categoria { get; protected set; }
+
+            public virtual void DefinirValores(string nome, string preco, decimal quantidade)
             {
                 Nome = nome;
                 Preco = Convert.ToDouble(preco);
                 Quantidade = quantidade;
-                Categoria = categoria;
             }
         };
 
-        Produto novoProduto;
-
         public class Salgado : Produto
         {
-            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            public override void DefinirValores(string nome, string preco, decimal quantidade)
             {
-                base.DefinirValores(nome , preco, quantidade, categoria);
+                base.DefinirValores(nome, preco, quantidade);
+                Categoria = "Salgado";
             }
         }
         public class Doce : Produto
         {
-            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            public override void DefinirValores(string nome, string preco, decimal quantidade)
             {
-                base.DefinirValores(nome, preco, quantidade, categoria);
+                base.DefinirValores(nome, preco, quantidade);
+                Categoria = "Doce";
             }
         }
         public class Bebida : Produto
         {
-            public override void DefinirValores(string nome, string preco, decimal quantidade, string categoria)
+            public override void DefinirValores(string nome, string preco, decimal quantidade)
             {
-                base.DefinirValores(nome, preco, quantidade, categoria);
+                base.DefinirValores(nome, preco, quantidade);
+                Categoria = "Bebida";
             }
         }
 
