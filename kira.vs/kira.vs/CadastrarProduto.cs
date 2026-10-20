@@ -19,6 +19,16 @@ namespace kira.vs
         public void btn_cadastrar_Click(object sender, EventArgs e)
         {
             bool cadastrado = true;
+            char categoria = 'X';
+
+            foreach (var item in FormInicial.Compartilhador.listaprodutos)
+            {
+                if (txt_nome.Text == item.Nome)
+                {
+                    cadastrado = false;
+                    break;
+                }
+            }
 
             if (string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text) || nud_quantidade.Value < 1)
             {
@@ -28,21 +38,16 @@ namespace kira.vs
             {
                 if (rad_salgado.Checked)
                 {
-                    Produto novoProduto = new Salgado();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
-                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                    categoria = 'S';
+                    
                 }
                 else if (rad_doce.Checked)
                 {
-                    Produto novoProduto = new Doce();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
-                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                    categoria = 'D';
                 }
                 else if (rad_bebida.Checked)
                 {
-                    Produto novoProduto = new Bebida();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
-                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                    categoria = 'B';
                 }
                 else
                 {
@@ -50,7 +55,27 @@ namespace kira.vs
                 }
             }
 
-            if (cadastrado == true){
+            if(cadastrado == true)
+            {
+                if (categoria == 'S')
+                {
+                    Produto novoProduto = new Salgado();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                }
+                else if (categoria == 'D')
+                {
+                    Produto novoProduto = new Doce();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                }
+                else if (categoria == 'B')
+                {
+                    Produto novoProduto = new Bebida();
+                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
+                }
+
                 txt_nome.Clear();
                 txt_preco.Clear();
                 nud_quantidade.Value = 0;
@@ -63,6 +88,7 @@ namespace kira.vs
                 MessageBox.Show("Inclua dados válidos.");
             }
         }
+
         public class Produto
         {
             public string? Nome { get; private set; }
