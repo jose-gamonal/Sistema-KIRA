@@ -14,7 +14,24 @@ namespace kira.vs
         public static class Compartilhador
         {
             public static BindingList<CadastrarProduto.Produto> listaprodutos { get; } = new BindingList<CadastrarProduto.Produto>();
+
+            public static string RemoverAcentos(string texto)
+            {
+                string normalizado = texto.Normalize(System.Text.NormalizationForm.FormKD);
+                string resultado = "";
+
+                foreach (char letra in normalizado)
+                {
+                    if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(letra) != System.Globalization.UnicodeCategory.NonSpacingMark)
+                    {
+                        resultado += letra;
+                    }
+                }
+
+                return resultado.Normalize(System.Text.NormalizationForm.FormC);
+            }
         }
+
 
         // Cada função abaixo abre o popup do formulário correspondente e fecha o anterior
         private void btn_produto_Click(object sender, EventArgs e)

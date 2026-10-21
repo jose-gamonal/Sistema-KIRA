@@ -39,6 +39,7 @@
             pbox_burger = new PictureBox();
             pbox_coca = new PictureBox();
             lbl_carrinho = new Label();
+            btn_consulta = new Button();
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbox_burger).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbox_coca).BeginInit();
@@ -94,9 +95,9 @@
             // 
             // txt_nome
             // 
-            txt_nome.Location = new Point(30, 58);
+            txt_nome.Location = new Point(90, 58);
             txt_nome.Name = "txt_nome";
-            txt_nome.Size = new Size(181, 23);
+            txt_nome.Size = new Size(121, 23);
             txt_nome.TabIndex = 8;
             // 
             // nud_quantidade
@@ -135,11 +136,22 @@
             lbl_carrinho.TabIndex = 13;
             lbl_carrinho.Text = ">";
             // 
+            // btn_consulta
+            // 
+            btn_consulta.Location = new Point(22, 57);
+            btn_consulta.Name = "btn_consulta";
+            btn_consulta.Size = new Size(62, 24);
+            btn_consulta.TabIndex = 14;
+            btn_consulta.Text = "Consulta";
+            btn_consulta.UseVisualStyleBackColor = true;
+            btn_consulta.Click += btn_consulta_Click;
+            // 
             // RealizarPedido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(568, 209);
+            Controls.Add(btn_consulta);
             Controls.Add(lbl_carrinho);
             Controls.Add(pbox_coca);
             Controls.Add(pbox_burger);
@@ -172,5 +184,6 @@
         private PictureBox pbox_burger;
         private PictureBox pbox_coca;
         private Label lbl_carrinho;
+        private Button btn_consulta;
     }
 }

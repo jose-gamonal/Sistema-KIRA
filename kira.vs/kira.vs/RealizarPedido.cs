@@ -7,6 +7,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
 using System.Linq;
+using static kira.vs.FormInicial.Compartilhador;
+
 namespace kira.vs
 {
     public partial class RealizarPedido : Form
@@ -14,41 +16,22 @@ namespace kira.vs
         public RealizarPedido()
         {
             InitializeComponent();
-            nud_quantidade.Minimum = 1;
         }
-
-
 
         List<(string Nome, decimal Quantidade)> carrinho = new List<(string Nome, decimal Quantidade)>();
 
         double precototal = 0;
-        private string RemoverAcentos(string texto)
-        {
-            string normalizado = texto.Normalize(System.Text.NormalizationForm.FormD);
-            string resultado = "";
-
-            foreach (char letra in normalizado)
-            {
-                if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(letra)
-                    != System.Globalization.UnicodeCategory.NonSpacingMark)
-                {
-                    resultado += letra;
-                }
-            }
-
-            return resultado.Normalize(System.Text.NormalizationForm.FormC);
-        }
 
         private void btn_adicionar_Click(object sender, EventArgs e)
         {
             {
                 bool registrado = false;
 
-                if (carrinho.Count < 8)
+                if (carrinho.Count < 9)
                 {
                     if (!String.IsNullOrWhiteSpace(txt_nome.Text) && nud_quantidade.Value > 0)
                     {
-                        foreach (var item in FormInicial.Compartilhador.listaprodutos)
+                        foreach (var item in listaprodutos)
                         {
                             if (RemoverAcentos(txt_nome.Text.Trim()).Equals(RemoverAcentos(item.Nome), StringComparison.OrdinalIgnoreCase))
                             {
@@ -68,11 +51,9 @@ namespace kira.vs
 
                                     if (existente != -1)
                                     {
-                                        var produtoCarrinho = carrinho[existente];
-
                                         carrinho[existente] = (
-                                            produtoCarrinho.Nome,
-                                            produtoCarrinho.Quantidade + nud_quantidade.Value
+                                            carrinho[existente].Nome,
+                                            carrinho[existente].Quantidade + nud_quantidade.Value
                                         );
                                     }
                                     else
@@ -107,7 +88,7 @@ namespace kira.vs
                         {
                             txt_total.Text = precototal.ToString();
                             txt_nome.Clear();
-                            nud_quantidade.Value = 1;
+                            nud_quantidade.Value = 0;
                         }
                     }
                 }
@@ -122,27 +103,22 @@ namespace kira.vs
         {
             bool realizado = false;
 
-            foreach (var lista in FormInicial.Compartilhador.listaprodutos.ToList())
+            foreach (var lista in listaprodutos.ToList())
             {
-                foreach (var ItemCarrinho in carrinho)
+                foreach (var item in carrinho)
                 {
-                    if (RemoverAcentos(lista.Nome).Equals(
-                        RemoverAcentos(ItemCarrinho.Nome),
-                        StringComparison.OrdinalIgnoreCase))
+                    if (RemoverAcentos(lista.Nome).Equals(RemoverAcentos(item.Nome), StringComparison.OrdinalIgnoreCase))
                     {
-                        lista.Venda(ItemCarrinho.Quantidade);
+                        lista.Venda(item.Quantidade);
 
                         if (lista.Quantidade < 1)
                         {
-                            var remover = FormInicial.Compartilhador.listaprodutos.FirstOrDefault(
-                                item => RemoverAcentos(item.Nome).Equals(
-                                    RemoverAcentos(ItemCarrinho.Nome),
-                                    StringComparison.OrdinalIgnoreCase)
-                            );
+                            var remover =
+                                listaprodutos.FirstOrDefault(item => RemoverAcentos(item.Nome).Equals(RemoverAcentos(item.Nome), StringComparison.OrdinalIgnoreCase));
 
                             if (remover != null)
                             {
-                                FormInicial.Compartilhador.listaprodutos.Remove(remover);
+                                listaprodutos.Remove(remover);
                             }
                         }
 
@@ -162,9 +138,18 @@ namespace kira.vs
                 txt_total.Text = "";
                 precototal = 0;
                 txt_nome.Clear();
-                nud_quantidade.Value = 1;
+                nud_quantidade.Value = 0;
                 lbl_carrinho.Text = "> ";
             }
+
+            btn_adicionar.Focus();
+        }
+
+        private void btn_consulta_Click(object sender, EventArgs e)
+        {
+            ProdutosCadastrados ProdutosCadastrados = new ProdutosCadastrados();
+            ProdutosCadastrados.ShowDialog();
+            btn_adicionar.Focus();
         }
     }
 }
