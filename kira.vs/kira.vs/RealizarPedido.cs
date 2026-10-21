@@ -13,9 +13,11 @@ namespace kira.vs
 {
     public partial class RealizarPedido : Form
     {
-        public RealizarPedido()
+        private FormInicial formPai;
+        public RealizarPedido(FormInicial form_Pai) // traz pra dentro do escopo do filho a informação de qual instância é o formulário inicial, a fim de atualizar a txtbox do lucrototal (linha ~90)
         {
             InitializeComponent();
+            formPai = form_Pai;
         }
 
         List<(string Nome, decimal Quantidade)> carrinho = new List<(string Nome, decimal Quantidade)>();
@@ -87,6 +89,7 @@ namespace kira.vs
                         if (carrinho.Count > 0)
                         {
                             txt_total.Text = precototal.ToString();
+                            formPai.txt_lucro.Text = LucroTotal(precototal).ToString();
                             txt_nome.Clear();
                             nud_quantidade.Value = 0;
                         }

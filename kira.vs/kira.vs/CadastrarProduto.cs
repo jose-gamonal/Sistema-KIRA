@@ -18,8 +18,6 @@ namespace kira.vs
             InitializeComponent();
         }
 
-        
-
         public void btn_cadastrar_Click(object sender, EventArgs e)
         {
             bool cadastrado = true;

@@ -33,6 +33,8 @@
             btn_produto = new Button();
             btn_cadastros = new Button();
             btn_pedido = new Button();
+            txt_lucro = new TextBox();
+            lbl_lucro = new Label();
             SuspendLayout();
             // 
             // lbl_titulo
@@ -71,7 +73,7 @@
             // 
             btn_cadastros.BackColor = Color.FromArgb(128, 128, 255);
             btn_cadastros.Font = new Font("Myanmar Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_cadastros.Location = new Point(30, 194);
+            btn_cadastros.Location = new Point(30, 186);
             btn_cadastros.Name = "btn_cadastros";
             btn_cadastros.Size = new Size(272, 71);
             btn_cadastros.TabIndex = 3;
@@ -83,7 +85,7 @@
             // 
             btn_pedido.BackColor = Color.FromArgb(128, 255, 128);
             btn_pedido.Font = new Font("Myanmar Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_pedido.Location = new Point(30, 297);
+            btn_pedido.Location = new Point(30, 284);
             btn_pedido.Name = "btn_pedido";
             btn_pedido.Size = new Size(272, 71);
             btn_pedido.TabIndex = 4;
@@ -91,11 +93,33 @@
             btn_pedido.UseVisualStyleBackColor = false;
             btn_pedido.Click += btn_pedido_Click;
             // 
+            // txt_lucro
+            // 
+            txt_lucro.Enabled = false;
+            txt_lucro.Font = new Font("Myanmar Text", 9F);
+            txt_lucro.Location = new Point(113, 378);
+            txt_lucro.Multiline = true;
+            txt_lucro.Name = "txt_lucro";
+            txt_lucro.Size = new Size(181, 23);
+            txt_lucro.TabIndex = 5;
+            // 
+            // lbl_lucro
+            // 
+            lbl_lucro.AutoSize = true;
+            lbl_lucro.Font = new Font("Myanmar Text", 8F);
+            lbl_lucro.Location = new Point(41, 381);
+            lbl_lucro.Name = "lbl_lucro";
+            lbl_lucro.Size = new Size(67, 20);
+            lbl_lucro.TabIndex = 7;
+            lbl_lucro.Text = "Lucro total:";
+            // 
             // FormInicial
             // 
             AutoScaleDimensions = new SizeF(15F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(333, 398);
+            ClientSize = new Size(333, 413);
+            Controls.Add(lbl_lucro);
+            Controls.Add(txt_lucro);
             Controls.Add(btn_pedido);
             Controls.Add(btn_cadastros);
             Controls.Add(btn_produto);
@@ -116,5 +140,7 @@
         private Button btn_produto;
         private Button btn_cadastros;
         private Button btn_pedido;
+        private Label lbl_lucro;
+        internal TextBox txt_lucro;
     }
 }

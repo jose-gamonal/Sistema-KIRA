@@ -15,6 +15,13 @@ namespace kira.vs
         {
             public static BindingList<CadastrarProduto.Produto> listaprodutos { get; } = new BindingList<CadastrarProduto.Produto>();
 
+            public static double lucrototal { get; private set; } = 0;
+            public static double LucroTotal(double precototal)
+            {
+                lucrototal += precototal;
+                return lucrototal;
+            }
+
             public static string RemoverAcentos(string texto)
             {
                 string normalizado = texto.Normalize(System.Text.NormalizationForm.FormKD);
@@ -52,7 +59,7 @@ namespace kira.vs
 
         private void btn_pedido_Click(object sender, EventArgs e)
         {
-            RealizarPedido RealizarPedido = new RealizarPedido();
+            RealizarPedido RealizarPedido = new RealizarPedido(this);
             this.Hide();
             RealizarPedido.ShowDialog();
             this.Show();
