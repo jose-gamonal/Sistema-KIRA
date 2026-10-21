@@ -41,6 +41,7 @@
             dgv_tabela.ReadOnly = true;
             dgv_tabela.Size = new Size(461, 410);
             dgv_tabela.TabIndex = 0;
+            dgv_tabela.CellContentClick += dgv_tabela_CellContentClick;
             // 
             // label1
             // 

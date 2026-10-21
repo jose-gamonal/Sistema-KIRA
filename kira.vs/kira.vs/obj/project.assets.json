@@ -8,25 +8,31 @@
     "net10.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\Gamonal\\.nuget\\packages\\": {}
+    "C:\\Users\\ricar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+      "projectUniqueName": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
       "projectName": "kira.vs",
-      "projectPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
-      "packagesPath": "C:\\Users\\Gamonal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\obj\\",
+      "projectPath": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+      "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Gamonal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0-windows"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net10.0-windows": {
@@ -45,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0-windows": {
@@ -70,7 +76,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

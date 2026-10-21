@@ -14,6 +14,24 @@ namespace kira.vs
         public CadastrarProduto()
         {
             InitializeComponent();
+            nud_quantidade.Minimum = 1;
+        }
+
+        private string RemoverAcentos(string texto)
+        {
+            string normalizado = texto.Normalize(System.Text.NormalizationForm.FormD);
+            string resultado = "";
+
+            foreach (char letra in normalizado)
+            {
+                if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(letra)
+                    != System.Globalization.UnicodeCategory.NonSpacingMark)
+                {
+                    resultado += letra;
+                }
+            }
+
+            return resultado.Normalize(System.Text.NormalizationForm.FormC);
         }
 
         public void btn_cadastrar_Click(object sender, EventArgs e)
@@ -21,9 +39,12 @@ namespace kira.vs
             bool cadastrado = true;
             char categoria = 'X';
 
+
+
             foreach (var item in FormInicial.Compartilhador.listaprodutos)
             {
-                if (txt_nome.Text == item.Nome)
+                if (RemoverAcentos(txt_nome.Text.Trim()).Equals(
+                    RemoverAcentos(item.Nome), StringComparison.OrdinalIgnoreCase))
                 {
                     cadastrado = false;
                     break;
@@ -39,7 +60,7 @@ namespace kira.vs
                 if (rad_salgado.Checked)
                 {
                     categoria = 'S';
-                    
+
                 }
                 else if (rad_doce.Checked)
                 {
@@ -55,30 +76,30 @@ namespace kira.vs
                 }
             }
 
-            if(cadastrado == true)
+            if (cadastrado == true)
             {
                 if (categoria == 'S')
                 {
                     Produto novoProduto = new Salgado();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    novoProduto.DefinirValores(txt_nome.Text.Trim(), txt_preco.Text, nud_quantidade.Value);//trim remove espaços em branco no início e no final da string
                     FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
                 else if (categoria == 'D')
                 {
                     Produto novoProduto = new Doce();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    novoProduto.DefinirValores(txt_nome.Text.Trim(), txt_preco.Text, nud_quantidade.Value);
                     FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
                 else if (categoria == 'B')
                 {
                     Produto novoProduto = new Bebida();
-                    novoProduto.DefinirValores(txt_nome.Text, txt_preco.Text, nud_quantidade.Value);
+                    novoProduto.DefinirValores(txt_nome.Text.Trim(), txt_preco.Text, nud_quantidade.Value);
                     FormInicial.Compartilhador.listaprodutos.Add(novoProduto);
                 }
 
                 txt_nome.Clear();
                 txt_preco.Clear();
-                nud_quantidade.Value = 0;
+                nud_quantidade.Value = 1;
                 rad_bebida.Checked = false;
                 rad_doce.Checked = false;
                 rad_salgado.Checked = false;
@@ -105,7 +126,7 @@ namespace kira.vs
 
             public void Venda(decimal quantidadevendida)
             {
-                Quantidade -= quantidadevendida; 
+                Quantidade -= quantidadevendida;
             }
         };
 
@@ -136,7 +157,7 @@ namespace kira.vs
 
         private void txt_preco_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true; //bloqueia
             }

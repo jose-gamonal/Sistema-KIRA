@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\",
+  "WorkspaceRootPath": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\cadastrarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\realizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\gamonal\\desktop\\kira\\sistema kira\\kira.vs\\kira.vs\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\realizarpedido.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\realizarpedido.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\sistema-kira\\kira.vs\\kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A382FAF1-AEDE-7B41-FBF0-0396731F5372}|kira.vs\\kira.vs.csproj|solutionrelative:kira.vs\\produtoscadastrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -42,25 +58,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RealizarPedido.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
-              "RelativeDocumentMoniker": "kira.vs\\RealizarPedido.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs [Projeto]",
-              "RelativeToolTip": "kira.vs\\RealizarPedido.cs [Projeto]",
+              "DocumentIndex": 4,
+              "Title": "RealizarPedido.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\RealizarPedido.Designer.cs",
+              "RelativeDocumentMoniker": "kira.vs\\RealizarPedido.Designer.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\RealizarPedido.Designer.cs",
+              "RelativeToolTip": "kira.vs\\RealizarPedido.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawKkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T20:45:57.75Z",
+              "WhenOpened": "2026-10-21T00:14:33.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdutosCadastrados.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
+              "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs [Projeto]",
+              "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:46:19.706Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutosCadastrados.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
+              "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
+              "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:45:13.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RealizarPedido.cs",
-              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
               "RelativeDocumentMoniker": "kira.vs\\RealizarPedido.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
               "RelativeToolTip": "kira.vs\\RealizarPedido.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAqwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T21:09:00.834Z",
               "EditorCaption": ""
@@ -69,11 +111,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CadastrarProduto.cs",
-              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
               "RelativeDocumentMoniker": "kira.vs\\CadastrarProduto.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\CadastrarProduto.cs",
               "RelativeToolTip": "kira.vs\\CadastrarProduto.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAowF8AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAWwCsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T12:54:30.057Z",
               "EditorCaption": ""
@@ -82,11 +124,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FormInicial.cs",
-              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
               "RelativeDocumentMoniker": "kira.vs\\FormInicial.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
               "RelativeToolTip": "kira.vs\\FormInicial.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T13:14:50.69Z",
               "EditorCaption": ""
