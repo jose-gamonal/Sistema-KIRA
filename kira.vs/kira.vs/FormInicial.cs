@@ -6,9 +6,11 @@ namespace kira.vs
 {
     public partial class FormInicial : Form
     {
+        public static FormInicial InstanciaAtiva { get; private set; }
         public FormInicial()
         {
             InitializeComponent();
+            InstanciaAtiva = this;
         }
 
         public static class Compartilhador
@@ -16,10 +18,10 @@ namespace kira.vs
             public static BindingList<CadastrarProduto.Produto> listaprodutos { get; } = new BindingList<CadastrarProduto.Produto>();
 
             public static double lucrototal { get; private set; } = 0;
-            public static double LucroTotal(double precototal)
+            public static void LucroTotal(double precototal)
             {
                 lucrototal += precototal;
-                return lucrototal;
+                FormInicial.InstanciaAtiva.txt_lucro.Text = lucrototal.ToString();
             }
 
             public static string RemoverAcentos(string texto)

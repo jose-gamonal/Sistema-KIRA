@@ -58,6 +58,17 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutosCadastrados.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
+              "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
+              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs [Projeto]",
+              "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:46:19.706Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "RealizarPedido.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.Designer.cs",
@@ -66,8 +77,7 @@
               "RelativeToolTip": "kira.vs\\RealizarPedido.Designer.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAiwF0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T14:34:03.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T14:34:03.699Z"
             },
             {
               "$type": "Document",
@@ -83,18 +93,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProdutosCadastrados.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
-              "RelativeDocumentMoniker": "kira.vs\\ProdutosCadastrados.cs",
-              "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs [Projeto]",
-              "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T23:46:19.706Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ProdutosCadastrados.cs",
               "DocumentMoniker": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\ProdutosCadastrados.cs",
@@ -103,8 +101,7 @@
               "RelativeToolTip": "kira.vs\\ProdutosCadastrados.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T23:45:13.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T23:45:13.302Z"
             },
             {
               "$type": "Document",
@@ -114,7 +111,7 @@
               "RelativeDocumentMoniker": "kira.vs\\RealizarPedido.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs",
               "RelativeToolTip": "kira.vs\\RealizarPedido.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwFoAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwFsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T21:09:00.834Z",
               "EditorCaption": ""
@@ -129,8 +126,7 @@
               "RelativeToolTip": "kira.vs\\CadastrarProduto.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T12:54:30.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T12:54:30.057Z"
             },
             {
               "$type": "Document",
@@ -140,7 +136,7 @@
               "RelativeDocumentMoniker": "kira.vs\\FormInicial.cs",
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\FormInicial.cs",
               "RelativeToolTip": "kira.vs\\FormInicial.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD0AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBcAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T13:14:50.69Z",
               "EditorCaption": ""
@@ -154,8 +150,7 @@
               "ToolTip": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\RealizarPedido.cs [Projeto]",
               "RelativeToolTip": "kira.vs\\RealizarPedido.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T13:28:13.781Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-10-21T13:28:13.781Z"
             }
           ]
         }

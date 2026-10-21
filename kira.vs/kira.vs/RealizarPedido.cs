@@ -89,7 +89,7 @@ namespace kira.vs
                         if (carrinho.Count > 0)
                         {
                             txt_total.Text = precototal.ToString();
-                            formPai.txt_lucro.Text = LucroTotal(precototal).ToString();
+                            LucroTotal(precototal); // função do compartilhador que atualiza a caixa precototal no FormInicial
                             txt_nome.Clear();
                             nud_quantidade.Value = 0;
                         }
