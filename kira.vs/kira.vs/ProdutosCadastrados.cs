@@ -20,7 +20,7 @@ namespace kira.vs
         {
             if (listaprodutos.Count == 0)
             {
-                MessageBox.Show("Lista vazia.");
+                MessageBox.Show("Lista vazia.", "Aviso");
                 this.Close();
                 return;
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lbl_titulo = new Label();
             lbl_nome = new Label();
             lbl_preco = new Label();
@@ -40,6 +41,8 @@
             rad_doce = new RadioButton();
             rad_bebida = new RadioButton();
             lbl_titulosistema = new Label();
+            tip_remover = new ToolTip(components);
+            btn_remover = new Button();
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).BeginInit();
             SuspendLayout();
             // 
@@ -105,9 +108,9 @@
             // 
             // btn_cadastrar
             // 
-            btn_cadastrar.Location = new Point(44, 217);
+            btn_cadastrar.Location = new Point(122, 217);
             btn_cadastrar.Name = "btn_cadastrar";
-            btn_cadastrar.Size = new Size(214, 53);
+            btn_cadastrar.Size = new Size(136, 53);
             btn_cadastrar.TabIndex = 9;
             btn_cadastrar.Text = "Cadastrar";
             btn_cadastrar.UseVisualStyleBackColor = true;
@@ -156,11 +159,23 @@
             lbl_titulosistema.TabIndex = 2;
             lbl_titulosistema.Text = "Cadastrar Produto";
             // 
+            // btn_remover
+            // 
+            btn_remover.Location = new Point(44, 217);
+            btn_remover.Name = "btn_remover";
+            btn_remover.Size = new Size(72, 53);
+            btn_remover.TabIndex = 13;
+            btn_remover.Text = "Remover";
+            tip_remover.SetToolTip(btn_remover, "Removerá completamente o item com o nome indicado do estoque, ignorando o qualquer dado informado em preço, quantidade ou categoria.");
+            btn_remover.UseVisualStyleBackColor = true;
+            btn_remover.Click += btn_remover_Click;
+            // 
             // CadastrarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(303, 295);
+            ClientSize = new Size(303, 289);
+            Controls.Add(btn_remover);
             Controls.Add(rad_bebida);
             Controls.Add(rad_doce);
             Controls.Add(rad_salgado);
@@ -194,5 +209,7 @@
         private RadioButton rad_doce;
         private RadioButton rad_bebida;
         private Label lbl_titulosistema;
+        private ToolTip tip_remover;
+        private Button btn_remover;
     }
 }

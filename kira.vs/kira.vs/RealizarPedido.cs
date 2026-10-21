@@ -43,7 +43,7 @@ namespace kira.vs
 
                                 if (nud_quantidade.Value > item.Quantidade - reservado)
                                 {
-                                    MessageBox.Show("Quantidade informada maior do que quantidade em estoque.");
+                                    MessageBox.Show("Quantidade informada maior do que quantidade em estoque.", "Aviso");
                                     registrado = true;
                                     break;
                                 }
@@ -80,11 +80,7 @@ namespace kira.vs
                         }
                     }
 
-                    if (registrado == false)
-                    {
-                        MessageBox.Show("Insira dados válidos.");
-                    }
-                    else
+                    if (registrado)
                     {
                         if (carrinho.Count > 0)
                         {
@@ -94,10 +90,14 @@ namespace kira.vs
                             nud_quantidade.Value = 0;
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Insira dados válidos.", "Aviso");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Limite de itens atingido (8).");
+                    MessageBox.Show("Limite de itens atingido (8).", "Aviso");
                 }
             }
         }
@@ -131,11 +131,7 @@ namespace kira.vs
                 }
             }
 
-            if (realizado == false)
-            {
-                MessageBox.Show("Carrinho vazio.");
-            }
-            else
+            if (realizado)
             {
                 carrinho.Clear();
                 txt_total.Text = "";
@@ -143,6 +139,10 @@ namespace kira.vs
                 txt_nome.Clear();
                 nud_quantidade.Value = 0;
                 lbl_carrinho.Text = "> ";
+            }
+            else
+            {
+                MessageBox.Show("Carrinho vazio.", "Aviso");
             }
 
             btn_adicionar.Focus();
