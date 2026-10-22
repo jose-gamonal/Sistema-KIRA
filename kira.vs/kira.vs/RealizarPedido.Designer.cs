@@ -99,14 +99,15 @@
             txt_nome.Name = "txt_nome";
             txt_nome.Size = new Size(121, 23);
             txt_nome.TabIndex = 8;
-            txt_nome.TextChanged += txt_nome_TextChanged;
             // 
             // nud_quantidade
             // 
             nud_quantidade.Location = new Point(217, 58);
+            nud_quantidade.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nud_quantidade.Name = "nud_quantidade";
             nud_quantidade.Size = new Size(50, 23);
             nud_quantidade.TabIndex = 10;
+            nud_quantidade.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // pbox_burger
             // 

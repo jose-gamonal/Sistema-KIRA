@@ -16,7 +16,7 @@ namespace kira.vs
         public CadastrarProduto()
         {
             InitializeComponent();
-            nud_quantidade.Minimum = 1;
+
         }
 
         public class Produto
@@ -80,7 +80,7 @@ namespace kira.vs
                 }
             }
 
-            if (string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text) || nud_quantidade.Value < 1)
+            if (string.IsNullOrWhiteSpace(txt_nome.Text) || string.IsNullOrWhiteSpace(txt_preco.Text))
             {
                 cadastrado = false;
             }

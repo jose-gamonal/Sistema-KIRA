@@ -19,7 +19,6 @@ namespace kira.vs
         {
             InitializeComponent();
             formPai = form_Pai;
-            nud_quantidade.Minimum = 1;
         }
 
         List<(string Nome, decimal Quantidade)> carrinho = new List<(string Nome, decimal Quantidade)>();
@@ -33,7 +32,7 @@ namespace kira.vs
 
                 if (carrinho.Count < 9)
                 {
-                    if (!String.IsNullOrWhiteSpace(txt_nome.Text) && nud_quantidade.Value > 0)
+                    if (!String.IsNullOrWhiteSpace(txt_nome.Text))
                     {
                         foreach (var item in listaprodutos)
                         {
@@ -155,11 +154,6 @@ namespace kira.vs
             ProdutosCadastrados ProdutosCadastrados = new ProdutosCadastrados();
             ProdutosCadastrados.ShowDialog();
             btn_adicionar.Focus();
-        }
-
-        private void txt_nome_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

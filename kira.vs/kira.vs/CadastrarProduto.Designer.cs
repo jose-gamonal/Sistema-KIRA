@@ -102,9 +102,11 @@
             // nud_quantidade
             // 
             nud_quantidade.Location = new Point(130, 150);
+            nud_quantidade.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nud_quantidade.Name = "nud_quantidade";
             nud_quantidade.Size = new Size(128, 23);
             nud_quantidade.TabIndex = 8;
+            nud_quantidade.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btn_cadastrar
             // 
