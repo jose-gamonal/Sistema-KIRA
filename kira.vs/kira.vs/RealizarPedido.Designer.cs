@@ -99,6 +99,7 @@
             txt_nome.Name = "txt_nome";
             txt_nome.Size = new Size(121, 23);
             txt_nome.TabIndex = 8;
+            txt_nome.TextChanged += txt_nome_TextChanged;
             // 
             // nud_quantidade
             // 

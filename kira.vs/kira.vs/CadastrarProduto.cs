@@ -16,6 +16,7 @@ namespace kira.vs
         public CadastrarProduto()
         {
             InitializeComponent();
+            nud_quantidade.Minimum = 1;
         }
 
         public class Produto
@@ -127,7 +128,7 @@ namespace kira.vs
 
                 txt_nome.Clear();
                 txt_preco.Clear();
-                nud_quantidade.Value = 0;
+                nud_quantidade.Value = 1;
                 rad_bebida.Checked = false;
                 rad_doce.Checked = false;
                 rad_salgado.Checked = false;
@@ -142,7 +143,7 @@ namespace kira.vs
         {
             bool removido = false;
 
-            if(txt_nome.Text.Trim() == "")
+            if (txt_nome.Text.Trim() == "")
             {
                 MessageBox.Show("Nenhum item informado.", "Aviso");
             }
@@ -173,7 +174,8 @@ namespace kira.vs
                     }
                 }
 
-                if (removido) {
+                if (removido)
+                {
                     txt_nome.Clear();
                 }
                 else
@@ -198,6 +200,11 @@ namespace kira.vs
             {
                 e.Handled = true;
             } //se você digitar uma vírgula E ele tiver encontrado uma outra vírgula já em algum lugar do texto
+        }
+
+        private void CadastrarProduto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

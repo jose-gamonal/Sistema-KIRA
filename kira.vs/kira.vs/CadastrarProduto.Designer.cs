@@ -190,6 +190,7 @@
             Controls.Add(lbl_titulo);
             Name = "CadastrarProduto";
             Text = "Cadastrar Produto";
+            Load += CadastrarProduto_Load;
             ((System.ComponentModel.ISupportInitialize)nud_quantidade).EndInit();
             ResumeLayout(false);
             PerformLayout();

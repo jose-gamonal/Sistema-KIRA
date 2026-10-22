@@ -13,11 +13,13 @@ namespace kira.vs
 {
     public partial class RealizarPedido : Form
     {
+        
         private FormInicial formPai;
         public RealizarPedido(FormInicial form_Pai) // traz pra dentro do escopo do filho a informação de qual instância é o formulário inicial, a fim de atualizar a txtbox do lucrototal (linha ~90)
         {
             InitializeComponent();
             formPai = form_Pai;
+            nud_quantidade.Minimum = 1;
         }
 
         List<(string Nome, decimal Quantidade)> carrinho = new List<(string Nome, decimal Quantidade)>();
@@ -87,7 +89,7 @@ namespace kira.vs
                             txt_total.Text = precototal.ToString();
                             LucroTotal(precototal); // função do compartilhador que atualiza a caixa precototal no FormInicial
                             txt_nome.Clear();
-                            nud_quantidade.Value = 0;
+                            nud_quantidade.Value = 1;
                         }
                     }
                     else
@@ -137,7 +139,7 @@ namespace kira.vs
                 txt_total.Text = "";
                 precototal = 0;
                 txt_nome.Clear();
-                nud_quantidade.Value = 0;
+                nud_quantidade.Value = 1;
                 lbl_carrinho.Text = "> ";
             }
             else
@@ -153,6 +155,11 @@ namespace kira.vs
             ProdutosCadastrados ProdutosCadastrados = new ProdutosCadastrados();
             ProdutosCadastrados.ShowDialog();
             btn_adicionar.Focus();
+        }
+
+        private void txt_nome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj": {}
+    "C:\\Users\\LABSC3\\Documents\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj": {
+    "C:\\Users\\LABSC3\\Documents\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+        "projectUniqueName": "C:\\Users\\LABSC3\\Documents\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
         "projectName": "kira.vs",
-        "projectPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
-        "packagesPath": "C:\\Users\\Gamonal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gamonal\\Desktop\\KIRA\\Sistema KIRA\\kira.vs\\kira.vs\\obj\\",
+        "projectPath": "C:\\Users\\LABSC3\\Documents\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\kira.vs.csproj",
+        "packagesPath": "C:\\Users\\LABSC3\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LABSC3\\Documents\\GitHub\\Sistema-KIRA\\kira.vs\\kira.vs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Gamonal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\LABSC3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
