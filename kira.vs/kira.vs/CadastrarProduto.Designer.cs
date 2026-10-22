@@ -86,6 +86,7 @@
             // 
             txt_preco.Location = new Point(130, 121);
             txt_preco.Name = "txt_preco";
+            txt_preco.ShortcutsEnabled = false;
             txt_preco.Size = new Size(128, 23);
             txt_preco.TabIndex = 6;
             txt_preco.KeyPress += txt_preco_KeyPress;
@@ -132,7 +133,7 @@
             // rad_doce
             // 
             rad_doce.AutoSize = true;
-            rad_doce.Location = new Point(123, 185);
+            rad_doce.Location = new Point(125, 185);
             rad_doce.Name = "rad_doce";
             rad_doce.Size = new Size(52, 19);
             rad_doce.TabIndex = 11;

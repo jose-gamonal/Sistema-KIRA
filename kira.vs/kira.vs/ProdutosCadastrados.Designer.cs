@@ -36,10 +36,10 @@
             // dgv_tabela
             // 
             dgv_tabela.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_tabela.Location = new Point(13, 48);
+            dgv_tabela.Location = new Point(-2, 48);
             dgv_tabela.Name = "dgv_tabela";
             dgv_tabela.ReadOnly = true;
-            dgv_tabela.Size = new Size(461, 410);
+            dgv_tabela.Size = new Size(2239, 1313);
             dgv_tabela.TabIndex = 0;
             // 
             // label1
@@ -57,7 +57,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(488, 488);
+            ClientSize = new Size(436, 401);
             Controls.Add(label1);
             Controls.Add(dgv_tabela);
             Name = "ProdutosCadastrados";
