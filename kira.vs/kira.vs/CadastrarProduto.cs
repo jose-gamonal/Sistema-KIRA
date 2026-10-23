@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
-using System.Runtime.InteropServices.Marshalling;
-using System.Text;
-using System.Windows.Forms;
-using static kira.vs.FormInicial.Compartilhador;
+﻿using static kira.vs.FormInicial.Compartilhador;
 
 namespace kira.vs
 {
@@ -110,7 +101,7 @@ namespace kira.vs
                 if (categoria == 'S')
                 {
                     Produto novoProduto = new Salgado();
-                    novoProduto.DefinirValores(txt_nome.Text.Trim(), txt_preco.Text, nud_quantidade.Value);//trim remove espaços em branco no início e no final da string
+                    novoProduto.DefinirValores(txt_nome.Text.Trim(), txt_preco.Text, nud_quantidade.Value);
                     listaprodutos.Add(novoProduto);
                 }
                 else if (categoria == 'D')
@@ -189,7 +180,7 @@ namespace kira.vs
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
-                e.Handled = true; //bloqueia
+                e.Handled = true;
             }
             else
             {
@@ -199,12 +190,7 @@ namespace kira.vs
             if (e.KeyChar == ',' && ((sender as TextBox).Text.IndexOf(',')) > -1)
             {
                 e.Handled = true;
-            } //se você digitar uma vírgula E ele tiver encontrado uma outra vírgula já em algum lugar do texto
-        }
-
-        private void CadastrarProduto_Load(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }

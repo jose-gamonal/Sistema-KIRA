@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Windows.Forms;
-using System.Linq;
+﻿using System.Data;
 using static kira.vs.FormInicial.Compartilhador;
 
 namespace kira.vs
@@ -15,7 +7,7 @@ namespace kira.vs
     {
         
         private FormInicial formPai;
-        public RealizarPedido(FormInicial form_Pai) // traz pra dentro do escopo do filho a informação de qual instância é o formulário inicial, a fim de atualizar a txtbox do lucrototal (linha ~90)
+        public RealizarPedido(FormInicial form_Pai)
         {
             InitializeComponent();
             formPai = form_Pai;
@@ -86,7 +78,7 @@ namespace kira.vs
                         if (carrinho.Count > 0)
                         {
                             txt_total.Text = precototal.ToString();
-                            LucroTotal(precototal); // função do compartilhador que atualiza a caixa precototal no FormInicial
+                            LucroTotal(precototal);
                             txt_nome.Clear();
                             nud_quantidade.Value = 1;
                         }

@@ -1,6 +1,5 @@
 using System.ComponentModel;
 using static kira.vs.CadastrarProduto;
-using static kira.vs.ProdutosCadastrados;
 
 namespace kira.vs
 {
@@ -15,13 +14,13 @@ namespace kira.vs
 
         public static class Compartilhador
         {
-            public static BindingList<CadastrarProduto.Produto> listaprodutos { get; } = new BindingList<CadastrarProduto.Produto>();
+            public static BindingList<Produto> listaprodutos { get; } = new BindingList<Produto>();
 
             public static double lucrototal { get; private set; } = 0;
             public static void LucroTotal(double precototal)
             {
                 lucrototal += precototal;
-                FormInicial.InstanciaAtiva.txt_lucro.Text = lucrototal.ToString();
+                InstanciaAtiva.txt_lucro.Text = lucrototal.ToString();
             }
 
             public static string RemoverAcentos(string texto)
@@ -42,7 +41,6 @@ namespace kira.vs
         }
 
 
-        // Cada função abaixo abre o popup do formulário correspondente e fecha o anterior
         private void btn_produto_Click(object sender, EventArgs e)
         {
             CadastrarProduto CadastrarProduto = new CadastrarProduto();
